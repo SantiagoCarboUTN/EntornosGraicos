@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Envio de correo electronico</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form name="formulario" method="post" action="practica1.php">
+      <table width="500px">
+        
+        <tr>
+          <td>
+            <label for="nombre">Nombre:</label>
+          </td>
+          <td>
+            <input type="text" name="nombre" maxlength="50" size="25" required>
+          </td>
+        </tr>
+        
+        <tr>
+          <td valign="top">
+            <label for="apellido">Apellido:</label>
+          </td>
+          <td>
+            <input type="text" name="apellido" maxlength="50" size="25" required>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <label for="email">Dirección de E-mail (destinatario):</label>
+          </td>
+          <td>
+            <input type="text" name="email" maxlength="80" size="35" required>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Asunto:</td>
+          <td><label for="asunto"></label>
+            <input type="text" name="asunto" id="asunto">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <label for="comments">Comentarios:</label>
+          </td>
+          <td>
+            <textarea name="comentarios" maxlength="200" cols="30" rows="5" required></textarea>
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="text-align:end">
+            <input type="submit" value="Enviar">
+          </td>
+        </tr>
+      
+      </table>
+    </form>
+  </body>
+</html>
